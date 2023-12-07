@@ -1,0 +1,11 @@
+        switch action {
+        case .change(let mask):
+            newState = changeMask(mask, in: newState)
+        case .createMask:
+            break
+        }
+        
+        return newState
+    }
+    
+    private func changeMask(_ mask: UIImage?,
